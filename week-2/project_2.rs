@@ -11,7 +11,7 @@ fn main () {
 	let dell_qty:f64 = 3.0;
 	let acer_qty:f64 =1.0;
 
- let sum = toshiba_amount + mac_amount + hp_amount + dell_amount + acer_amount;
+ let sum = toshiba_amount * toshiba_qty + mac_amount * mac_qty + hp_amount * hp_qty + dell_amount * dell_qty + acer_amount * acer_qty;
  let no = toshiba_qty + mac_qty + hp_qty + dell_qty + acer_qty;
 let average = sum / no;
 
