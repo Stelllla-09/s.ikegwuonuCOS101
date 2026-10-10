@@ -26,14 +26,13 @@ fn main() {
         price = 2500.0;
     } else {
         println!("Invalid food choice");
-        return; // Stops the program here if they type a wrong letter
+        return;
     }
 
     println!("Enter quantity:");
     let mut quantity_str = String::new();
     io::stdin().read_line(&mut quantity_str).expect("Girllll");
     
-    // Convert the quantity string into a usable float number
     let quantity: f64 = quantity_str.trim().parse().expect("Please enter a number for quantity");
 
     let mut total = price * quantity;
